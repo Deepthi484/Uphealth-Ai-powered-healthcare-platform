@@ -1,0 +1,21 @@
+{
+  "name": "uphealth-fullstack",
+  "version": "1.0.0",
+  "description": "UpHealth - AI-powered health platform with frontend and backend",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
+    "dev:frontend": "cd nextjs && npm run dev",
+    "dev:backend": "cd backend && npm run dev",
+    "build": "cd nextjs && npm run build",
+    "start": "cd nextjs && npm start",
+    "install:all": "npm install && cd nextjs && npm install && cd ../backend && npm install"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "concurrently": "^8.2.2",
+    "motion": "^12.23.12",
+    "node-fetch": "^3.3.2",
+    "simplex-noise": "^4.0.3",
+    "tailwind-merge": "^3.3.1"
+  }
+}
